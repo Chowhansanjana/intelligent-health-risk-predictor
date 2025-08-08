@@ -40,20 +40,23 @@ Python 3.10+
 MySQL running locally
 Ollama / LLM service running on http://localhost:11434
 
-# Create virtual environment
+Create virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-# Install backend requirements
+
+Install backend requirements
 pip install -r requirements.txt
-# Start the FastAPI server
+
+Start the FastAPI server
 cd backend
 uvicorn main:app --reload --port 8000
 
 ## 🌐 Frontend Setup (Streamlit UI)
 
-# Activate virtual environment if not already active
+Activate virtual environment if not already active
 source venv/bin/activate  # Or venv\Scripts\activate on Windows
-# Run Streamlit app
+
+Run Streamlit app
 cd streamlit_ui
 streamlit run app.py
 
